@@ -1,0 +1,171 @@
+<!-- BabyBento Mobile-First HTML Email Template -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BabyBento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Client-safe resets */
+    body { margin:0; padding:0; background:#FFFFFF; }
+    img { border:0; line-height:100%; outline:none; text-decoration:none; display:block; }
+    table { border-collapse:collapse !important; }
+    /* Hover (safe in some clients) */
+    .btn:hover { opacity:0.92; }
+    @media screen and (max-width:600px) {
+      .container { width:100% !important; }
+      .stack { display:block !important; width:100% !important; }
+      .p-hero { padding:24px !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background:#FFFFFF;">
+  <center>
+    <table role="presentation" width="100%" bgcolor="#FFFFFF">
+      <tr>
+        <td align="center">
+          <table role="presentation" class="container" width="600" style="width:600px; max-width:600px;">
+            <!-- Header -->
+            <tr>
+              <td style="padding:20px 24px; border-bottom:1px solid #F5F5F5;">
+                <table role="presentation" width="100%">
+                  <tr>
+                    <td align="left" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif; font-size:16px; color:#121212;">
+                      <!-- Replace with Shopify liquid logo if available -->
+                      <img src="{{ shop.logo | img_url: '200x' }}" alt="BabyBento" style="height:32px; width:auto;">
+                    </td>
+                    <td align="right" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif; font-size:14px;">
+                      <a href="https://www.babybento.com.au" style="color:#4A90E2; text-decoration:none;">Shop All</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Hero -->
+            <tr>
+              <td class="p-hero" style="padding:32px 32px 12px;">
+                <h1 style="margin:0 0 8px 0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif; font-size:32px; line-height:1.2; color:#121212;">
+                  Pack joy into every lunchbox
+                </h1>
+                <p style="margin:0 0 20px 0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif; font-size:16px; line-height:1.6; color:#121212;">
+                  Bento boxes, drink bottles, and lunch bags loved by families—curated for fuss-free, happy mealtimes.
+                </p>
+                <!-- Accessible CTA (Coral fill + White text) -->
+                <table role="presentation" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left">
+                      <a href="https://www.babybento.com.au/collections/all"
+                         class="btn"
+                         style="display:inline-block; background:#FF6F61; color:#FFFFFF; text-decoration:none; font-weight:600; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:16px; line-height:1; padding:14px 20px; border-radius:8px; mso-padding-alt:0;">
+                        Shop new arrivals
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Feature grid -->
+            <tr>
+              <td style="padding:8px 16px 24px;">
+                <table role="presentation" width="100%">
+                  <tr>
+                    <!-- Item 1 -->
+                    <td class="stack" width="50%" style="padding:8px;">
+                      <table role="presentation" width="100%" style="border:1px solid #F5F5F5; border-radius:8px;">
+                        <tr><td style="padding:12px;">
+                          <img src="{{ collections['bento-boxes'].image | img_url: '400x' }}" alt="Bento Boxes" width="100%" style="border-radius:6px;">
+                          <h3 style="margin:10px 0 6px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:18px; color:#121212;">Bento Boxes</h3>
+                          <p style="margin:0 0 10px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:14px; color:#555555;">Yumbox, Bentgo, and more.</p>
+                          <a href="https://www.babybento.com.au/collections/bento-boxes"
+                             style="color:#4A90E2; font-weight:600; text-decoration:none;">Shop now →</a>
+                        </td></tr>
+                      </table>
+                    </td>
+                    <!-- Item 2 -->
+                    <td class="stack" width="50%" style="padding:8px;">
+                      <table role="presentation" width="100%" style="border:1px solid #F5F5F5; border-radius:8px;">
+                        <tr><td style="padding:12px;">
+                          <img src="{{ collections['drink-bottles'].image | img_url: '400x' }}" alt="Drink Bottles" width="100%" style="border-radius:6px;">
+                          <h3 style="margin:10px 0 6px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:18px; color:#121212;">Drink Bottles</h3>
+                          <p style="margin:0 0 10px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:14px; color:#555555;">MontiiCo and more.</p>
+                          <a href="https://www.babybento.com.au/collections/drink-bottles"
+                             style="color:#4A90E2; font-weight:600; text-decoration:none;">Shop now →</a>
+                        </td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <!-- Item 3 -->
+                    <td class="stack" width="50%" style="padding:8px;">
+                      <table role="presentation" width="100%" style="border:1px solid #F5F5F5; border-radius:8px;">
+                        <tr><td style="padding:12px;">
+                          <img src="{{ collections['lunch-bags'].image | img_url: '400x' }}" alt="Lunch Bags" width="100%" style="border-radius:6px;">
+                          <h3 style="margin:10px 0 6px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:18px; color:#121212;">Lunch Bags</h3>
+                          <p style="margin:0 0 10px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:14px; color:#555555;">Insulated, durable, fun.</p>
+                          <a href="https://www.babybento.com.au/collections/lunch-bags"
+                             style="color:#4A90E2; font-weight:600; text-decoration:none;">Shop now →</a>
+                        </td></tr>
+                      </table>
+                    </td>
+                    <!-- Item 4 -->
+                    <td class="stack" width="50%" style="padding:8px;">
+                      <table role="presentation" width="100%" style="border:1px solid #F5F5F5; border-radius:8px;">
+                        <tr><td style="padding:12px;">
+                          <img src="{{ collections['accessories'].image | img_url: '400x' }}" alt="Accessories" width="100%" style="border-radius:6px;">
+                          <h3 style="margin:10px 0 6px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:18px; color:#121212;">Accessories</h3>
+                          <p style="margin:0 0 10px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:14px; color:#555555;">Cutlery, containers, more.</p>
+                          <a href="https://www.babybento.com.au/collections/accessories"
+                             style="color:#4A90E2; font-weight:600; text-decoration:none;">Shop now →</a>
+                        </td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Brand strip -->
+            <tr>
+              <td style="padding:8px 24px 24px;">
+                <table role="presentation" width="100%">
+                  <tr>
+                    <td align="center" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:14px; color:#777777;">
+                      Loved brands: b.box • MontiiCo • Yumbox • Bentgo
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td style="padding:16px 24px 32px; border-top:1px solid #F5F5F5;">
+                <table role="presentation" width="100%">
+                  <tr>
+                    <td align="left" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:13px; color:#777777; line-height:1.6;">
+                      BabyBento · Perth, WA<br>
+                      <a href="https://www.babybento.com.au" style="color:#4A90E2; text-decoration:none;">babybento.com.au</a>
+                      &nbsp;•&nbsp;
+                      <a href="{{ unsubscribe_url }}" style="color:#4A90E2; text-decoration:none;">Unsubscribe</a>
+                    </td>
+                    <td align="right" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; font-size:13px; color:#777777;">
+                      <a href="https://www.instagram.com/" style="color:#4A90E2; text-decoration:none;">Instagram</a>
+                      &nbsp;•&nbsp;
+                      <a href="https://www.facebook.com/" style="color:#4A90E2; text-decoration:none;">Facebook</a>
+                      &nbsp;•&nbsp;
+                      <a href="https://www.pinterest.com/" style="color:#4A90E2; text-decoration:none;">Pinterest</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>

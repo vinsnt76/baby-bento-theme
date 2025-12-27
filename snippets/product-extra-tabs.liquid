@@ -1,0 +1,44 @@
+{%- comment -%}
+  Ensure we are using .value to parse the Rich Text JSON into HTML.
+{%- endcomment -%}
+{%- assign specs_html = product.metafields.custom.specifications.value -%}
+{%- assign shipping_html = product.metafields.custom.shipping_info.value -%}
+{%- assign reviews_html = product.metafields.custom.reviews.value -%}
+
+<div class="product-extra-tabs">
+  {%- if specs_html != blank -%}
+    <details class="product-tab" id="Details-Specs-{{ section.id }}">
+      <summary class="product-tab__summary">
+        <span class="product-tab__title">📏 Specifications</span>
+        <span class="product-tab__icon">{% render 'icon-caret' %}</span>
+      </summary>
+      <div class="product-tab__content rte">
+        {{ specs_html }} 
+      </div>
+    </details>
+  {%- endif -%}
+
+  {%- if shipping_html != blank -%}
+    <details class="product-tab" id="Details-Shipping-{{ section.id }}">
+      <summary class="product-tab__summary">
+        <span class="product-tab__title">📦 Shipping Info</span>
+        <span class="product-tab__icon">{% render 'icon-caret' %}</span>
+      </summary>
+      <div class="product-tab__content rte">
+        {{ shipping_html }}
+      </div>
+    </details>
+  {%- endif -%}
+
+  {%- if reviews_html != blank -%}
+    <details class="product-tab" id="Details-Reviews-{{ section.id }}">
+      <summary class="product-tab__summary">
+        <span class="product-tab__title">⭐ Customer Reviews</span>
+        <span class="product-tab__icon">{% render 'icon-caret' %}</span>
+      </summary>
+      <div class="product-tab__content rte">
+        {{ reviews_html }}
+      </div>
+    </details>
+  {%- endif -%}
+</div>

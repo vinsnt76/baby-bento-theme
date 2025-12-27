@@ -1,0 +1,17 @@
+{% layout none %}
+{% assign all_urls = '' %}
+{% for page in pages %}
+  {% assign all_urls = all_urls | append: page.url | append: ',' %}
+{% endfor %}
+{% for product in products %}
+  {% assign all_urls = all_urls | append: product.url | append: ',' %}
+{% endfor %}
+{% for collection in collections %}
+  {% assign all_urls = all_urls | append: collection.url | append: ',' %}
+{% endfor %}
+{% for blog in blogs %}
+  {% for article in blog.articles %}
+    {% assign all_urls = all_urls | append: article.url | append: ',' %}
+  {% endfor %}
+{% endfor %}
+{{ all_urls }}
