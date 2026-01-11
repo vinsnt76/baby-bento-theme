@@ -1,0 +1,31 @@
+# (Cloudflare/Copyright Headers stay here...)
+
+# Specific Bot Blocks
+User-agent: Amazonbot
+Disallow: /
+User-agent: GPTBot
+Disallow: /
+# (Add the other specific bots you listed here...)
+
+# Single Consolidated Block for All Other Bots
+User-agent: *
+Content-signal: search=yes,ai-train=no
+
+# Shopify Default Disallows
+Disallow: /admin
+Disallow: /cart
+# (...all other Shopify default disallows...)
+
+# Your Custom SEO Rules
+Disallow: /*?*pr_*
+Disallow: /*?*phcursor=*
+Disallow: /*?page=*
+
+# Your High-Value 'Allow' Rules
+Allow: /blogs/product-review/australia-insulated-lunch-bags-top-brands-2026
+Allow: /blogs/product-review/lunchbox-solutions-for-busy-parents
+Allow: /blogs/news/5-must-have-bento-accessories-that-pay-for-themselves
+Allow: /blogs/baby-bento-news/kids-bento-boxes-australia-guide
+Allow: /blogs/recipes/easy-sushi-maker-kids-bento
+
+Sitemap: https://www.babybento.com.au/sitemap.xml

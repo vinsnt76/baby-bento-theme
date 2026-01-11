@@ -1,0 +1,131 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false
+      }
+    },
+    "multicolumn_niyWqf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_adHqUQ": {
+          "type": "column",
+          "settings": {
+            "title": "Bento Boxes",
+            "text": "<p>Explore our premium bento box collection designed for toddlers and kids.</p>"
+          }
+        },
+        "column_JdChMf": {
+          "type": "column",
+          "settings": {
+            "title": "Insulated Food Jars",
+            "text": "<p>Keep meals fresh and at the perfect temperature with our insulated food jars.</p>"
+          }
+        },
+        "column_eqPGXM": {
+          "type": "column",
+          "settings": {
+            "title": "Bento Accessories",
+            "text": "<p>Complete your bento setup with our selection of forks, spoons, and more.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_adHqUQ",
+        "column_JdChMf",
+        "column_eqPGXM"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Shop by Category",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false
+      }
+    },
+    "blocks_jnhhEp": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_477bf41_cYHekK": {
+          "type": "ai_gen_block_477bf41",
+          "settings": {
+            "heading": "More Questions About Our Bento Boxes",
+            "heading_size": 32,
+            "heading_alignment": "left",
+            "heading_spacing": 30,
+            "question_1": "Are these BPA-free and food-safe?",
+            "answer_1": "<p>Yes, all our baby lunch boxes are made from 100% BPA-free, food-grade materials that meet Australian safety standards. They're free from harmful chemicals like phthalates and PVC, ensuring safe food storage for your little one.</p>",
+            "question_2": "Which lunchbox is best for a child who hates food touching?",
+            "answer_2": "<p>Our compartmentalized bento boxes are perfect for picky eaters. They feature separate sealed compartments that keep foods completely isolated—sandwiches, fruits, and snacks stay in their own sections without mixing.</p>",
+            "question_3": "Will this fit in a standard insulated cooler bag?",
+            "answer_3": "<p>Yes, our bento boxes are designed with standard dimensions (approximately 18cm x 13cm x 6cm) that fit most insulated lunch bags and backpack compartments, making them compatible with popular cooler bag brands.</p>",
+            "question_4": "How long will these lunch boxes last?",
+            "answer_4": "<p>Our premium bento boxes are built to last 3-5+ years with proper care. The durable construction withstands daily use, drops, and dishwasher cycles, making them a long-term investment that grows with your child.</p>",
+            "question_5": "What warranty do you offer?",
+            "answer_5": "<p>We stand behind our products with a 1-year warranty covering manufacturing defects. Contact our customer service team for warranty claims and support.</p>",
+            "allow_multiple": false,
+            "max_width": 800,
+            "section_padding": 40,
+            "item_spacing": 10,
+            "question_padding": 20,
+            "border_radius": 8,
+            "question_size": 16,
+            "answer_size": 14,
+            "icon_size": 24,
+            "background_color": "#FFFFFF",
+            "heading_color": "#121212",
+            "item_background": "#FFFFFF",
+            "border_color": "#e0e0e0",
+            "border_hover_color": "#121212",
+            "question_color": "#121212",
+            "question_hover_color": "#e22120",
+            "answer_color": "#666666",
+            "icon_color": "#121212"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_477bf41_cYHekK"
+      ],
+      "name": "FAQ accordion",
+      "settings": {}
+    }
+  },
+  "order": [
+    "banner",
+    "multicolumn_niyWqf",
+    "product-grid",
+    "blocks_jnhhEp"
+  ]
+}

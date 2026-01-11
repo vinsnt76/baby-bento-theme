@@ -1,0 +1,364 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_8xNBQe": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/BOXING_DAY_10.gif",
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "featured_collection_TaxHDn": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "50 - 70% OFF BLACK FRIDAY",
+        "collection": "50-70-off",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "collection_list_Bbnxqe": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_PBDiDV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "b-box-harry-potter-lunchbox-and-accessories"
+          }
+        },
+        "featured_collection_7kgy6a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "b-box-batman"
+          }
+        },
+        "featured_collection_E6Bzei": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "b-box-buddy-and-tray"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_PBDiDV",
+        "featured_collection_7kgy6a",
+        "featured_collection_E6Bzei"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "ALL NEW B.BOX",
+        "image_ratio": "adapt",
+        "color_scheme": "accent-2",
+        "swipe_on_mobile": true,
+        "image_padding": true,
+        "show_view_all": false
+      }
+    },
+    "1635172041565e1c9a": {
+      "type": "collection-list",
+      "blocks": {
+        "1635172041565e1c9a-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "b-box"
+          }
+        },
+        "c28d25bd-f005-4bf3-8234-c54b1ed4548a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "montiico"
+          }
+        },
+        "e274cba7-78b1-4ba2-bec1-c7e38d6f909e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "yumbox"
+          }
+        },
+        "9cd59168-f609-4a7d-a184-38902bb69de6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "melii"
+          }
+        },
+        "1635172041565e1c9a-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "munchbox"
+          }
+        },
+        "ae74b2c4-e47a-4ea2-8565-a8675f25e322": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "omiebox"
+          }
+        },
+        "featured_collection_6cTBcg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "thezerowastepeople"
+          }
+        },
+        "92362297-1b07-4f96-b899-f1c816f66e13": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ecococoon"
+          }
+        },
+        "026df85f-4391-45af-8728-33aef5e4bf65": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "spencil-lunch-bags"
+          }
+        }
+      },
+      "block_order": [
+        "1635172041565e1c9a-2",
+        "c28d25bd-f005-4bf3-8234-c54b1ed4548a",
+        "e274cba7-78b1-4ba2-bec1-c7e38d6f909e",
+        "9cd59168-f609-4a7d-a184-38902bb69de6",
+        "1635172041565e1c9a-0",
+        "ae74b2c4-e47a-4ea2-8565-a8675f25e322",
+        "featured_collection_6cTBcg",
+        "92362297-1b07-4f96-b899-f1c816f66e13",
+        "026df85f-4391-45af-8728-33aef5e4bf65"
+      ],
+      "settings": {
+        "title": "POPULAR BRANDS",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": true,
+        "show_view_all": false
+      }
+    },
+    "featured_collection_hKt4UQ": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "NEW",
+        "collection": "new",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "featured_collection_A9zVnd": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Build Your Own Bundles",
+        "collection": "build-your-own-bundles",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "featured_collection_rK8WRR": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "SALE",
+        "collection": "makespace",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "featured_products": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Insulated Food Jar",
+        "collection": "insulated-food-jar",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "featured_collection_JzrDdn": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "B.box",
+        "collection": "b-box",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "featured_collection_TVt6UR": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Montii.Co",
+        "collection": "montii-co-lunch-bags",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "featured_collection_yY3RPb": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Munchbox",
+        "collection": "munchbox",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "163517302654f02de0": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "YUMBOX",
+        "collection": "yumbox",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "featured_collection_dM79yz": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Sale",
+        "collection": "clearance-bento-lunchboxes",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "1635169520fd2e90bd": {
+      "type": "newsletter",
+      "blocks": {
+        "1635169520fd2e90bd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our news letter"
+          }
+        },
+        "1635169520fd2e90bd-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>new product alert, pre order details and exclusive deals !!<br/><br/></p>"
+          }
+        },
+        "1635169520fd2e90bd-2": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "1635169520fd2e90bd-0",
+        "1635169520fd2e90bd-1",
+        "1635169520fd2e90bd-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "1635173434b2c5cdb0": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "image_banner_8xNBQe",
+    "featured_collection_TaxHDn",
+    "collection_list_Bbnxqe",
+    "1635172041565e1c9a",
+    "featured_collection_dM79yz",
+    "featured_collection_hKt4UQ",
+    "featured_collection_A9zVnd",
+    "featured_collection_rK8WRR",
+    "featured_products",
+    "featured_collection_JzrDdn",
+    "featured_collection_TVt6UR",
+    "featured_collection_yY3RPb",
+    "163517302654f02de0",
+    "1635169520fd2e90bd",
+    "1635173434b2c5cdb0"
+  ]
+}

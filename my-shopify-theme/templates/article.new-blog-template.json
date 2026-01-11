@@ -1,0 +1,79 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "69952105-92f3-4814-b814-bce7a60de427": {
+      "type": "image-banner",
+      "blocks": {
+        "template--14553939869778__69952105-92f3-4814-b814-bce7a60de427-1686921364749230c2-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Weetbix Chocolate Slice: A Delicious and Healthy Lunch Box Snack",
+            "heading_size": "medium"
+          }
+        },
+        "template--14553939869778__69952105-92f3-4814-b814-bce7a60de427-1686921364749230c2-1": {
+          "type": "text",
+          "settings": {
+            "text": "If you are looking for a delicious and healthy lunch box snack that your kids will love, look no further than this weetbix chocolate slice"
+          }
+        }
+      },
+      "block_order": [
+        "template--14553939869778__69952105-92f3-4814-b814-bce7a60de427-1686921364749230c2-0",
+        "template--14553939869778__69952105-92f3-4814-b814-bce7a60de427-1686921364749230c2-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/chocolate-weetbix-slice.webp",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "share",
+        "content"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "69952105-92f3-4814-b814-bce7a60de427",
+    "main"
+  ]
+}

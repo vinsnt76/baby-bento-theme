@@ -1,0 +1,24 @@
+<section class="product-extra-content">
+    <article class="pec-article">
+        {% if product.metafields.custom.specifications %}
+            <div class="pec-block product-specs">
+                <h2 class="pec-title">📏 Specifications</h2>
+                {{ product.metafields.custom.specifications }}
+            </div>
+        {% endif %}
+
+        {% if product.metafields.custom.shipping_info %}
+            <div class="pec-block product-shipping">
+                <h2 class="pec-title">🚚 Shipping Info</h2>
+                {{ product.metafields.custom.shipping_info }}
+            </div>
+        {% endif %}
+
+        {% if product.metafields.custom.reviews %}
+            <div class="pec-block product-reviews">
+                <h2 class="pec-title">⭐ Customer Reviews</h2>
+                {{ product.metafields.custom.reviews }}
+            </div>
+        {% endif %}
+    </article>
+</section>

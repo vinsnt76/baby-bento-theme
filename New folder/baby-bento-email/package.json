@@ -1,0 +1,30 @@
+{
+  "name": "baby-bento-email",
+  "version": "1.0.0",
+  "description": "Email templates for Baby Bento promotions",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/baby-bento-email.git"
+  },
+  "keywords": [
+    "email",
+    "templates",
+    "promotions",
+    "baby bento"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "eslint": "^7.32.0"
+  }
+}

@@ -1,0 +1,24 @@
+<section>
+  <article style="max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem;">
+    {% if product.metafields.custom.specifications %}
+      <div class="product-specs" style="margin-bottom: 2rem;">
+        <h2 style="font-size: 1.25rem; font-weight: 600;">📏 Specifications</h2>
+        {{ product.metafields.custom.specifications }}
+      </div>
+    {% endif %}
+
+    {% if product.metafields.custom.shipping_info %}
+      <div class="product-shipping" style="margin-bottom: 2rem;">
+        <h2 style="font-size: 1.25rem; font-weight: 600;">🚚 Shipping Info</h2>
+        {{ product.metafields.custom.shipping_info }}
+      </div>
+    {% endif %}
+
+    {% if product.metafields.custom.reviews %}
+      <div class="product-reviews" style="background: #fefcbf; border-left: 4px solid #d69e2e; padding: 1rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+        <h2 style="font-size: 1.25rem; font-weight: 600;">⭐ Customer Reviews</h2>
+        {{ product.metafields.custom.reviews }}
+      </div>
+    {% endif %}
+  </article>
+</section>

@@ -1,0 +1,40 @@
+/* assets/stainless-steel.css */
+.lg-hero { text-align: center; padding: 2rem 1.5rem; margin-bottom: 4rem; }
+.lg-icon-wrapper { background-color: #f8f9fa; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid #e0e0e0; }
+.lg-title { font-family: var(--font-heading-family); font-weight: var(--font-heading-weight); font-size: 3rem; line-height: 1.2; letter-spacing: calc(var(--font-heading-scale) * 0.06rem); margin-bottom: 2rem; color: rgb(var(--color-foreground)); }
+.lg-subtitle { font-size: 1.6rem; margin-bottom: 2.5rem; line-height: 1.6; color: rgb(var(--color-foreground)); max-width: 800px; margin-left: auto; margin-right: auto; }
+.lg-section { margin-bottom: 50px; padding: 0 20px; }
+.lg-heading { font-family: var(--font-heading-family); font-size: 2.4rem; margin-bottom: 1.5rem; color: rgb(var(--color-foreground)); }
+.lg-section-content { font-size: 1.6rem; margin-bottom: 2rem; line-height: 1.6; color: rgb(var(--color-foreground)); }
+.lg-brand-grid { display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem; }
+.lg-brand-card { flex: 1; min-width: 250px; padding: 2.5rem; border-radius: 8px; }
+
+/* Card Variants */
+.lg-card-default { border: 1px solid #e8e8e8; background: #fff; }
+.lg-card-warm { background: #fffaf0; border: 1px solid #f3e5ab; }
+.lg-card-cool { background: #f0f7ff; border: 1px solid #d0e7ff; }
+
+.lg-brand-name { font-family: var(--font-heading-family); font-size: 1.8rem; margin-top: 0; margin-bottom: 1rem; }
+.lg-brand-desc { font-size: 1.5rem; line-height: 1.6; margin-bottom: 1.5rem; }
+.lg-feature-list { list-style: none; padding: 0; font-size: 1.5rem; margin-top: 1.5rem; }
+.lg-feature-item { margin-bottom: 0.8rem; }
+
+/* Buttons */
+.lg-brand-cta { display: inline-block; margin-top: 1rem; font-weight: 600; font-size: 1.4rem; text-decoration: none; border-radius: 4px; }
+.lg-btn-outline { padding: 1.2rem 2.5rem; border: 1px solid #333; color: #333; }
+.lg-btn-link { text-decoration: underline; color: #333; }
+
+/* FAQ */
+.lg-faq-section { margin-top: 3rem; }
+.lg-faq-item { border-bottom: 1px solid #e0e0e0; padding: 1.2rem 0; }
+.lg-faq-question { cursor: pointer; font-weight: 600; font-size: 1.6rem; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.lg-faq-question::-webkit-details-marker { display: none; }
+.lg-faq-question::after { content: '＋'; font-size: 1.8rem; transition: transform 0.2s; }
+.lg-faq-item[open] .lg-faq-question::after { content: '－'; }
+.lg-faq-answer { padding-top: 1rem; font-size: 1.5rem; color: #555; }
+
+/* Footer */
+.lg-footer { margin-top: 4rem; text-align: center; border-top: 1px solid #e8e8e8; padding-top: 3rem; background: transparent; color: inherit; }
+.lg-footer-heading { font-family: var(--font-heading-family); font-size: 2.4rem; margin-bottom: 1rem; color: rgb(var(--color-foreground)); }
+.lg-footer-body { font-size: 1.6rem; max-width: 600px; margin: 0 auto 2rem; }
+.lg-footer-cta { display: inline-block; padding: 1.5rem 3rem; background: #000; color: #fff; text-decoration: none; border-radius: 4px; font-size: 1.6rem; font-weight: 600; letter-spacing: 0.1rem; }

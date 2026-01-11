@@ -1,0 +1,148 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "16788576269eec43eb": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "byob-empty-state-hint": {
+      "type": "byob-empty-state-hint",
+      "settings": {}
+    },
+    "17547236045d3630fa": {
+      "type": "apps",
+      "blocks": {
+        "byob_byob_bundle_info_block_Bpygf3": {
+          "type": "shopify://apps/byob/blocks/byob-bundle-info-block/cbcdb3c1-93e1-4702-8f46-0cad28865e89",
+          "settings": {
+            "show_banner_image": true,
+            "top-layout": "left-parallel",
+            "media_size": "medium",
+            "image_header_padding": 0,
+            "byob_section_wrapper": true,
+            "align_text": "center",
+            "title_size": "h1",
+            "description_font_size": 12
+          }
+        }
+      },
+      "block_order": [
+        "byob_byob_bundle_info_block_Bpygf3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1754723634d80bbd44": {
+      "type": "apps",
+      "blocks": {
+        "byob_byob_product_grid_block_HaPgqg": {
+          "type": "shopify://apps/byob/blocks/byob-product-grid-block/cbcdb3c1-93e1-4702-8f46-0cad28865e89",
+          "settings": {
+            "items_per_row": 4,
+            "items_per_row_mobile": 2,
+            "open_all_tabs": false,
+            "show_step_builder": false,
+            "byob_section_wrapper": true,
+            "tab_color": "#f8ff8c",
+            "tab_text_color": "#3c3b3b",
+            "tick_icon_color": "#ff9900",
+            "card_background": "#ffffff",
+            "product_name_color": "#444444",
+            "button_color": "#ff2c2c",
+            "button_text_color": "#ffffff",
+            "add_a_bounding_box": true,
+            "disable_product_link": true,
+            "enable_quickview": false,
+            "show_product_compare_at_price": false,
+            "show_product_price": true,
+            "show_product_reviews": false,
+            "show_currency_code": false,
+            "show_product_type": false,
+            "show_product_vendor": false,
+            "show_sold_out_products": true,
+            "enable_quantity_input": false
+          }
+        }
+      },
+      "block_order": [
+        "byob_byob_product_grid_block_HaPgqg"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1754723657ac5dbcb5": {
+      "type": "apps",
+      "blocks": {
+        "byob_byob_footer_block_yPcgtA": {
+          "type": "shopify://apps/byob/blocks/byob-footer-block/cbcdb3c1-93e1-4702-8f46-0cad28865e89",
+          "settings": {
+            "background_color": "#e8e8e8",
+            "footer_product_name_color": "#222222",
+            "remove_icon_color": "#161616",
+            "footer_show_product_title": true,
+            "footer_show_total_price": true,
+            "footer_show_byob_total_price": true,
+            "footer_show_total_compare_at_price": false,
+            "footer_bottom_position": 10,
+            "product_card_padding": 5,
+            "add_a_border": false,
+            "border_color": "#676767",
+            "icon_type": "cart",
+            "icon_horizontal_position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "byob_byob_footer_block_yPcgtA"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1754723685b03c800a": {
+      "type": "apps",
+      "blocks": {
+        "byob_byob_confirm_modal_block_BidRxR": {
+          "type": "shopify://apps/byob/blocks/byob-confirm-modal-block/cbcdb3c1-93e1-4702-8f46-0cad28865e89",
+          "settings": {
+            "button_color": "",
+            "button_text_color": "",
+            "show_confirm_modal": true,
+            "show_view_cart_button": true,
+            "direct_checkout": false,
+            "show_create_another_button": true,
+            "hide_sku_on_cart": true,
+            "show_quantity_in_line_items": false,
+            "disable_block_list": false
+          }
+        }
+      },
+      "block_order": [
+        "byob_byob_confirm_modal_block_BidRxR"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "16788576269eec43eb",
+    "byob-empty-state-hint",
+    "17547236045d3630fa",
+    "1754723634d80bbd44",
+    "1754723657ac5dbcb5",
+    "1754723685b03c800a"
+  ]
+}

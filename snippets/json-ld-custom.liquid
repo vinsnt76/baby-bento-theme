@@ -1,0 +1,10 @@
+{%- comment -%}
+  Baby Bento - Custom JSON-LD Schema
+  Provisioned for: custom.product_schema_snippet (JSON Metafield)
+{%- endcomment -%}
+
+{%- if product.metafields.custom.product_schema_snippet.value != blank -%}
+  <script type="application/ld+json">
+    {{ product.metafields.custom.product_schema_snippet.value | json }}
+  </script>
+{%- endif -%}
