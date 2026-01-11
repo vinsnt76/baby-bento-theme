@@ -161,15 +161,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {% comment %} 2026 Guide Engine - Targeted Loading {% endcomment %}
   {% if template.suffix == 'new-blog-template' %}
     {{ 'master-guides.css' | asset_url | stylesheet_tag }}
-    
-    {% if article.handle contains 'stainless-steel' %}
-      <script>window.steelGuideDataUrl = "{{ 'stainless-steel-data.json' | asset_url }}";</script>
-      <script src="{{ 'stainless-steel.js' | asset_url }}" defer></script>
-    {% elsif article.handle contains 'insulated-lunch-bags' %}
-      <script>window.lunchGuideDataUrl = "{{ 'lunch-guide-data.json' | asset_url }}";</script>
-      <script src="{{ 'lunch-guide.js' | asset_url }}" defer></script>
-    {% endif %}
-  {% endif %} 
+    {{ 'lunch-guide.css' | asset_url | stylesheet_tag }}
+
+    <script src="{{ 'lunch-guide-data.json' | asset_url }}" type="application/json"></script>
+    <script src="{{ 'stainless-steel-data.json' | asset_url }}" type="application/json"></script>
+
+    <script src="{{ 'lunch-guide.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'stainless-steel.js' | asset_url }}" defer="defer"></script>
+  {% endif %}
 
 </head>
 
