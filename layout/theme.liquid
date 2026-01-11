@@ -157,8 +157,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Upsell & Cross Sell Kit by Logbase - Starts -->
       <script src='https://upsell-app.logbase.io/lb-upsell.js?shop=babybento.myshopify.com' defer></script>
     <!-- Upsell & Cross Sell Kit by Logbase - Ends -->
-    {{ 'lunch-guide.css' | asset_url | stylesheet_tag }}
-    {{ 'lunch-guide.js' | asset_url | script_tag }}
+
+  {% comment %} 2026 Guide Engine - Targeted Loading {% endcomment %}
+  {% if template.suffix == 'new-blog-template' %}
+    {{ 'master-guides.css' | asset_url | stylesheet_tag }}
+    
+    {% if article.handle contains 'stainless-steel' %}
+      <script>window.steelGuideDataUrl = "{{ 'stainless-steel-data.json' | asset_url }}";</script>
+      <script src="{{ 'stainless-steel.js' | asset_url }}" defer></script>
+    {% elsif article.handle contains 'insulated-lunch-bags' %}
+      <script>window.lunchGuideDataUrl = "{{ 'lunch-guide-data.json' | asset_url }}";</script>
+      <script src="{{ 'lunch-guide.js' | asset_url }}" defer></script>
+    {% endif %}
+  {% endif %} 
 
 </head>
 

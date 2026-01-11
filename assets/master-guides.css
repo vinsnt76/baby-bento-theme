@@ -1,0 +1,256 @@
+/* Master Guides CSS - 2026 Collection */
+/* Aligned with Dawn Theme Variables & Baby Bento Brand */
+
+/* Master Guides CSS - 2026 Structural Fix */
+
+/* --- Layout & Typography --- */
+#guide-content, 
+#lunch-guide-content, 
+#stainless-steel-content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 2rem 1rem;
+}
+
+.lg-hero {
+  border-radius: 15px;
+  padding: 50px 20px !important;
+  margin-bottom: 40px !important;
+  color: #FFFFFF !important;
+}
+
+.lg-title {
+  color: #FFFFFF !important;
+  font-size: 3rem !important;
+}
+
+.lg-subtitle {
+  font-family: var(--font-body-family);
+  font-size: 1.2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  line-height: calc(1 + 0.8 / var(--font-body-scale));
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.lg-section {
+  margin-bottom: 4rem;
+}
+
+.lg-heading {
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  font-size: calc(var(--font-heading-scale) * 2rem);
+  margin-bottom: 1.5rem;
+  border-bottom: 0.2rem solid rgba(var(--color-foreground), 0.08);
+  padding-bottom: 0.5rem;
+  color: rgb(var(--color-foreground));
+}
+
+/* --- Grid System --- */
+/* THE FIX: Force the container to allow 3 items side-by-side */
+.lg-brand-grid {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 20px !important;
+  width: 100% !important;
+  clear: both;
+}
+
+/* --- Cards --- */
+/* THE FIX: Each card takes up roughly 30% on desktop */
+.lg-brand-card {
+  flex: 1 1 300px !important;
+  max-width: 380px !important;
+  min-height: 500px;
+  background: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 12px;
+  display: flex !important;
+  flex-direction: column !important;
+  margin-bottom: 20px;
+}
+
+.lg-brand-card:hover {
+  border-color: rgb(var(--color-base-accent-1));
+  transform: translateY(-5px);
+}
+
+/* Image formatting */
+.lg-brand-image-wrapper {
+  width: 100%;
+  height: 220px;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lg-brand-image {
+  max-height: 180px;
+  width: auto;
+  object-fit: contain;
+}
+
+.lg-brand-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lg-brand-name {
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  font-size: calc(var(--font-heading-scale) * 1.7rem);
+  margin-bottom: 0.5rem;
+  color: rgb(var(--color-foreground));
+}
+
+.lg-brand-desc {
+  margin-bottom: 1rem;
+  font-family: var(--font-body-family);
+  font-size: 1.4rem;
+  line-height: calc(1 + 0.5 / var(--font-body-scale));
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+/* --- Specs & Features --- */
+.lg-specs-grid {
+  background: rgba(var(--color-foreground), 0.04);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.lg-specs-label {
+  font-weight: 600;
+  color: rgba(var(--color-foreground), 0.85);
+}
+
+.lg-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.lg-feature-item {
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1.4rem;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.lg-feature-item::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: rgb(var(--color-base-accent-1));
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+/* --- Buttons --- */
+.lg-brand-cta {
+  display: inline-block;
+  padding: 1rem 2.4rem;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  text-align: center;
+  margin-top: auto;
+  font-family: var(--font-body-family);
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  transition: all var(--duration-default) ease;
+}
+
+/* --- FAQ --- */
+.lg-faq-section {
+  background: rgba(var(--color-foreground), 0.04);
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+  margin-top: 4rem;
+}
+
+.lg-faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  padding-bottom: 1rem;
+}
+
+.lg-faq-question {
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: rgb(var(--color-foreground));
+  transition: color var(--duration-short) ease;
+}
+
+.lg-faq-question:hover {
+  color: rgb(var(--color-base-accent-1));
+}
+
+.lg-faq-answer {
+  font-family: var(--font-body-family);
+  font-size: 1.4rem;
+  line-height: calc(1 + 0.6 / var(--font-body-scale));
+  color: rgba(var(--color-foreground), 0.75);
+  margin-top: 0.8rem;
+}
+
+/* --- Footer --- */
+.lg-footer {
+  margin-top: 4rem;
+  text-align: center;
+  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  padding-top: 3rem;
+}
+
+.lg-footer-heading {
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  font-size: calc(var(--font-heading-scale) * 2.4rem);
+  margin-bottom: 1rem;
+  color: rgb(var(--color-foreground));
+}
+
+.lg-footer-body {
+  font-family: var(--font-body-family);
+  font-size: 1.6rem;
+  max-width: 60rem;
+  margin: 0 auto 2rem;
+  line-height: calc(1 + 0.8 / var(--font-body-scale));
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.lg-footer-cta {
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  background: rgb(var(--color-base-text));
+  color: rgb(var(--color-base-background-1));
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  transition: opacity var(--duration-default) ease;
+}
+
+.lg-footer-cta:hover {
+  opacity: 0.9;
+}
+
+/* Mobile Fix */
+@media screen and (max-width: 749px) {
+  .lg-brand-card {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+} 
