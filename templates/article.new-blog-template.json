@@ -9,20 +9,17 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-article",
-      "settings": {}
-    },
     "guide_engine": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div id=\"guide-content\" style=\"min-height: 300px; display: flex; align-items: center; justify-content: center; font-family: var(--font-body-family); color: rgba(var(--color-foreground), 0.75); font-size: 1.5rem;\">\n  🔄 Syncing Baby Bento 2026 Inventory...\n</div>"
+        "custom_liquid": "<div id=\"guide-content\" style=\"min-height: 300px; display: flex; align-items: center; justify-content: center; font-family: var(--font-body-family); color: rgba(var(--color-foreground), 0.75); font-size: 1.5rem;\">🔄 Syncing Baby Bento 2026 Inventory...</div>"
       }
     }
   },
   "order": [
-    "main",
     "guide_engine"
   ]
 }
+
+
  

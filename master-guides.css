@@ -8,13 +8,8 @@
 #lunch-guide-content, 
 #stainless-steel-content {
   max-width: 1200px !important;
-  margin: 0 auto !important;
+  margin: 0 auto;
   padding: 2rem 1rem;
-}
-.template-article--new-blog-template .content-for-layout {
-  padding: 0 !important;
-  margin: 0 !important;
-  max-width: 100% !important;
 }
 
 .lg-hero {
@@ -258,3 +253,4 @@
     flex: 1 1 100% !important;
     max-width: 100% !important;
   }
+}

@@ -2,15 +2,17 @@
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
     <!-- Seobility -->
-<meta name="seobility" content="6a90d083ba4a9adb271a93371c356d5e">
+    <meta name="seobility" content="6a90d083ba4a9adb271a93371c356d5e">
     <!-- End Seobility -->
+
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PCQHJ6L');</script>
-<!-- End Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PCQHJ6L');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -20,6 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- else -%}
       <link rel="canonical" href="{{ canonical_url }}">
     {%- endif -%}
+
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
     {%- if settings.favicon != blank -%}
@@ -32,9 +35,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <title>
       {{ page_title }}
-      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- if current_tags %} – tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %} – Page {{ current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} – {{ shop.name }}{% endunless -%}
     </title>
 
     {%- liquid
@@ -47,6 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         endif
       endif
     -%}
+
     {%- if meta_description != blank -%}
       <meta name="description" content="{{ meta_description | escape }}">
     {%- endif -%}
@@ -73,14 +77,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
-
         --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
-
         --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
         --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
-
         --color-base-text: {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};
         --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
         --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
@@ -89,12 +90,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
         --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
         --payment-terms-background-color: {{ settings.colors_background_1 }};
-
         --gradient-base-background-1: {% if settings.gradient_background_1 != blank %}{{ settings.gradient_background_1 }}{% else %}{{ settings.colors_background_1 }}{% endif %};
         --gradient-base-background-2: {% if settings.gradient_background_2 != blank %}{{ settings.gradient_background_2 }}{% else %}{{ settings.colors_background_2 }}{% endif %};
         --gradient-base-accent-1: {% if settings.gradient_accent_1 != blank %}{{ settings.gradient_accent_1 }}{% else %}{{ settings.colors_accent_1 }}{% endif %};
         --gradient-base-accent-2: {% if settings.gradient_accent_2 != blank %}{{ settings.gradient_accent_2 }}{% else %}{{ settings.colors_accent_2 }}{% endif %};
-
         --page-width: {{ settings.page_width | divided_by: 10 }}rem;
         --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
       }
@@ -137,6 +136,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
+
     {%- unless settings.type_header_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
@@ -146,7 +146,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- endif -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
-  {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+
+    {% unless template contains 'article' %}
+      {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}
+      {% unless boostersnippet contains "Liquid error" %}
+        {{ boostersnippet }}
+      {% endunless %}
+    {% endunless %}
 
     {% if request.page_type == 'collection' and current_tags != blank %}
       <meta name="robots" content="noindex, follow">
@@ -154,23 +160,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta name="robots" content="noindex, follow">
     {% endif %}
 
-    <!-- Upsell & Cross Sell Kit by Logbase - Starts -->
-      <script src='https://upsell-app.logbase.io/lb-upsell.js?shop=babybento.myshopify.com' defer></script>
-    <!-- Upsell & Cross Sell Kit by Logbase - Ends -->
+    <!-- Upsell & Cross Sell Kit by Logbase -->
+    <script src='https://upsell-app.logbase.io/lb-upsell.js?shop=babybento.myshopify.com' defer></script>
 
-  {% comment %} 2026 Guide Engine - Targeted Loading {% endcomment %}
-  {% if template.suffix == 'new-blog-template' %}
-    {{ 'master-guides.css' | asset_url | stylesheet_tag }}
-    {{ 'lunch-guide.css' | asset_url | stylesheet_tag }}
+    {% comment %} 2026 Guide Engine {% endcomment %}
+    {% if template.suffix == 'new-blog-template' %}
+      {{ 'master-guides.css' | asset_url | stylesheet_tag }}
 
-    <script src="{{ 'lunch-guide-data.json' | asset_url }}" type="application/json"></script>
-    <script src="{{ 'stainless-steel-data.json' | asset_url }}" type="application/json"></script>
+      {% if article.handle contains 'stainless-steel' %}
+        <script>window.steelGuideDataUrl = "{{ 'stainless-steel-data.json' | asset_url }}";</script>
+        <script src="{{ 'stainless-steel.js' | asset_url }}" defer></script>
 
-    <script src="{{ 'lunch-guide.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'stainless-steel.js' | asset_url }}" defer="defer"></script>
-  {% endif %}
-
-</head>
+      {% elsif article.handle contains 'insulated-lunch-bags' %}
+        <script>window.lunchGuideDataUrl = "{{ 'lunch-guide-data.json' | asset_url }}";</script>
+        <script src="{{ 'lunch-guide.js' | asset_url }}" defer></script>
+      {% endif %}
+    {% endif %}
+  </head>
 
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -179,6 +185,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
+
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
@@ -209,34 +216,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
 
       window.accessibilityStrings = {
-        shareSuccess: `{{ 'general.share.success_message' | t }}`,
+        shareSuccess: `{{ 'general.share.success_message' | t }}`
       }
     </script>
 
     {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
     {%- endif -%}
-  {% include 'booster-recommendation' %}
 
- {% render 'db.preorder.script' %}
+    {% include 'booster-recommendation' %}
+    {% render 'db.preorder.script' %}
 
+    <script id='merchantWidgetScript' src="https://www.gstatic.com/shopping/merchant/merchantwidget.js" defer></script>
 
-<script id='merchantWidgetScript' src="https://www.gstatic.com/shopping/merchant/merchantwidget.js" defer></script>
+    <script>
+      merchantWidgetScript.addEventListener('load', function () {
+        merchantwidget.start({
+          merchant_id: 5686121200,
+          position: 'BOTTOM_RIGHT',
+          region: 'AU'
+        });
+      });
+    </script>
 
-<script>
-  merchantWidgetScript.addEventListener('load', function () {
-    merchantwidget.start({
-         // REQUIRED FIELDS
-         merchant_id: 5686121200,
-
-         // OPTIONAL FIELDS
-         position: 'BOTTOM_RIGHT',
-         region: 'AU',
-    });
-  });
-</script>
-
-</body>
-
-
+  </body>
 </html>
