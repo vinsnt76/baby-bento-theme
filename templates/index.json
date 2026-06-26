@@ -13,7 +13,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/BOXING_DAY_12_18b369fb-1cec-419c-9f0f-900b47ce1b13.gif",
+        "image": "shopify://shop_images/BOXING_DAY_10.gif",
         "image_height": "small",
         "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
@@ -48,7 +48,7 @@
         "featured_collection_PBDiDV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "b-box-harry-potter-lunchbox-and-accessories"
+            "collection": "b-box-character-lunch-boxes"
           }
         },
         "featured_collection_7kgy6a": {
@@ -85,7 +85,7 @@
         "1635172041565e1c9a-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "b-box-character-lunch-boxes"
+            "collection": "b-box"
           }
         },
         "c28d25bd-f005-4bf3-8234-c54b1ed4548a": {
@@ -155,23 +155,6 @@
         "swipe_on_mobile": true,
         "image_padding": true,
         "show_view_all": false
-      }
-    },
-    "featured_collection_dM79yz": {
-      "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "title": "Sale",
-        "collection": "clearance-bento-lunchboxes",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
       }
     },
     "featured_collection_hKt4UQ": {
@@ -245,8 +228,8 @@
     "featured_collection_JzrDdn": {
       "type": "featured-collection",
       "settings": {
-        "title": "b.box",
-        "collection": "b-box-character-lunch-boxes",
+        "title": "B.box",
+        "collection": "b-box",
         "products_to_show": 8,
         "show_view_all": true,
         "swipe_on_mobile": true,
@@ -296,6 +279,23 @@
       "settings": {
         "title": "YUMBOX",
         "collection": "yumbox",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "featured_collection_dM79yz": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Sale",
+        "collection": "clearance-bento-lunchboxes",
         "products_to_show": 8,
         "show_view_all": true,
         "swipe_on_mobile": true,
