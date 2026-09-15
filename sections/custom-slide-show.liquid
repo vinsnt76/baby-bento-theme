@@ -5,7 +5,7 @@ data-autoplay="{{section.settings.autoplay}}"
 data-interval="{{section.settings.interval | times: 1000 }}">
 <ul class="slideshowContainer">
 {% for block in section.blocks %}
-<li class="slideWrapper {{block.settings.design}}" id="slide-{% increment %}">
+<li class="slideWrapper {{block.settings.design}}" id="slide-{% increment renamed_variable_empty %}">
 {% if block.settings.design == 'design12' %}
 {% if block.settings.internal_video contains "youtu" %}
 <div class="slideVideoExternalWrapper">
@@ -23,14 +23,14 @@ Your browser is not supported to play the video!
 <img class="slideImage"
 src="{{img_url | img_url: master}}"
 srcset="{% case img_url.width %}
-{% when >= 375 %}{{ img_url | img_url: '375x' }}375w,
-{% when >= 750 %}{{ img_url | img_url: '750x' }}750w,
-{% when >= 1100 %}{{ img_url | img_url: '1100x' }}1100w,
-{% when >= 1500 %}{{ img_url | img_url: '1500x' }}1500w,
-{% when >= 1780 %}{{ img_url | img_url: '1780x' }}1780w,
-{% when >= 2000 %}{{ img_url | img_url: '2000x' }}2000w,
-{% when >= 3000 %}{{ img_url | img_url: '3000x' }} 3000w,
-{% when >= 3840 %}{{ img_url | img_url: '3840x' }}3840w,
+{% when nil %}{{ img_url | img_url: '375x' }}375w,
+{% when nil %}{{ img_url | img_url: '750x' }}750w,
+{% when nil %}{{ img_url | img_url: '1100x' }}1100w,
+{% when nil %}{{ img_url | img_url: '1500x' }}1500w,
+{% when nil %}{{ img_url | img_url: '1780x' }}1780w,
+{% when nil %}{{ img_url | img_url: '2000x' }}2000w,
+{% when nil %}{{ img_url | img_url: '3000x' }} 3000w,
+{% when nil %}{{ img_url | img_url: '3840x' }}3840w,
 {% else %} {{ img_url | img_url: 'master' }}w,
 {% endcase %}"
 loading="lazy"
@@ -641,4 +641,37 @@ align-items: flex-end !important;
 }
 ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% increment %}"
+  to: "{% increment renamed_variable_empty %}"
+  position: 345..383
+- from: "{% when >= 375 %}"
+  to: "{% when nil %}"
+  position: 1103..1117
+- from: "{% when >= 750 %}"
+  to: "{% when nil %}"
+  position: 1154..1168
+- from: "{% when >= 1100 %}"
+  to: "{% when nil %}"
+  position: 1205..1219
+- from: "{% when >= 1500 %}"
+  to: "{% when nil %}"
+  position: 1258..1272
+- from: "{% when >= 1780 %}"
+  to: "{% when nil %}"
+  position: 1311..1325
+- from: "{% when >= 2000 %}"
+  to: "{% when nil %}"
+  position: 1364..1378
+- from: "{% when >= 3000 %}"
+  to: "{% when nil %}"
+  position: 1417..1431
+- from: "{% when >= 3840 %}"
+  to: "{% when nil %}"
+  position: 1471..1485
+{%- endcomment -%}
